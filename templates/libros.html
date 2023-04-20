@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Codigo de libros</title>
+</head>
+<body>
+    <h1>Se mostrara los titulos y autores del libro con el codigo {{num}}.</h1>
+    {% for titulo,autor in resultado %}
+        <h3>Titulo {{loop.index}}: {{titulo}}.</h3>
+        <h3>Autor {{loop.index}}: {{autor}}.</h3>
+    {% endfor %}
+    <a href="/">Inicio</a>
+</body>
+</html>

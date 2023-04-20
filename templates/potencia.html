@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Potencias</title>
+</head>
+<body>
+    {% if operando2>0 %}
+	    <h1>Resultado de la operacion</h1>
+        <h2>El resultado de la potencia con base {{operando1}} y exponente {{operando2}} es {{operando1**operando2}}</h2>
+	{% elif operando2==0 %}
+    	<h1>Resultado de la operacion</h1>
+        <h2>El resultado de la potencia con base {{operando1}} y exponente {{operando2}} es 1</h2>
+    {% else %}
+        <h1>Resultado de la operacion</h1>
+        <h2>El resultado de la potencia con base {{operando1}} y exponente {{operando2|abs}} es {{1/operando1}}</h2>
+    {% endif %}
+    <a href="/">Inicio</a>
+</body>
+</html>
